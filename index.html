@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Perfect!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo-container">
+        <img src="logo.png" alt="Company Logo" id="company-logo">
+    </div>
+    <h1>Pitch Perfect!</h1>
+    <p id="message">Listen to the pitch and find the correct key!</p>
+    <button id="generate-random-pitch">Generate Random Pitch!</button>
+    <div id="piano">
+        <!-- The virtual piano with 1 octave (12 keys including sharps/flats) -->
+        <button class="white-key" data-note="C4">C</button>
+        <button class="black-key" data-note="C#4">C#</button>
+        <button class="white-key" data-note="D4">D</button>
+        <button class="black-key" data-note="D#4">D#</button>
+        <button class="white-key" data-note="E4">E</button>
+        <button class="white-key" data-note="F4">F</button>
+        <button class="black-key" data-note="F#4">F#</button>
+        <button class="white-key" data-note="G4">G</button>
+        <button class="black-key" data-note="G#4">G#</button>
+        <button class="white-key" data-note="A4">A</button>
+        <button class="black-key" data-note="A#4">A#</button>
+        <button class="white-key" data-note="B4">B</button>
+    </div>
+
+    <button id="test-pitch" disabled>Test your pitch</button>
+    <button id="back">Back</button>
+    <button id="replay" style="display:none;">Replay</button>
+    <button id="next-tune" style="display:none;">Next Tune</button>
+
+    <div id="footer-message">
+        <p>If you're having fun with this,
+        you can consider jobs like:</p>
+        <p class="job-titles">Music Composer, Sound Engineer, Music Producer, etc!</p>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

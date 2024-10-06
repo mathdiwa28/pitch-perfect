@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat as the primary font */
+    text-align: center;
+    margin: 20px;
+    background-color: #222D39; /* Dark Bluish-Gray Background */
+    color: #FFD700; /* Default color for fallback */
+}
+
+#logo-container {
+    position: absolute;
+    top: 20px; /* Adjust this value to align the logo vertically */
+    left: 10px; /* Aligns logo to the left */
+    width: 120px; /* Set width for circular shape */
+    height: 120px; /* Set height for circular shape */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the logo doesn't overflow */
+    display: flex; /* Centers logo */
+    justify-content: center; /* Centers logo */
+    align-items: center; /* Centers logo */
+    background-color: rgba(255, 215, 0, 0.1); /* Optional: light gold background */
+    border: 2px solid white; /* White border */
+}
+
+#company-logo {
+    width: 100%; /* Logo width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin-top: 50px; /* Space between the logo and the heading */
+    background: linear-gradient(90deg, #FFD700, #FFAA00); /* Gold Gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
+
+#piano {
+    display: flex;
+    justify-content: center; /* Align the piano keys in the center */
+    margin: 20px 0;
+}
+
+.white-key {
+    width: 80px; /* Fixed width for white keys */
+    height: 150px; /* Fixed height for white keys */
+    background-color: white;
+    border: 5px solid white; /* White border for white keys */
+    display: flex;
+    align-items: center; /* Center align the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    font-size: 1.5rem; /* Font size for key labels */
+}
+
+.black-key {
+    background: linear-gradient(90deg, #1a237e, #283593); 
+    color: white;
+    position: relative;
+    left: 0px; /* Position black keys to overlap the white keys */
+    display: flex;
+    align-items: center; /* Center align the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    font-size: 1.5rem; /* Font size for key labels */
+    border: 5px solid white; /* White border for black keys */
+}
+button {
+    padding: 20px;
+    margin: 5px; /* Slightly increase margin between buttons */
+    border: none; /* No border for gradient effect */
+    cursor: pointer;
+    font-size: 1.5rem; /* Maintain button font size */
+    background: linear-gradient(90deg, #4f7894, #502ecc);  /* Blue to Green gradient */
+    color: white; /* White text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2980b9, #27ae60); /* Darker Blue to Darker Green on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+#message {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #FFD700, #FFAA00); /* Gold Gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#footer-message {
+    position: fixed;
+    bottom: 80px; /* Position it 80px from the bottom */
+    left: 50%; /* Move it to the center of the screen */
+    transform: translateX(-50%); /* Adjust position to truly center */
+    text-align: center; /* Center text within the container */
+    font-size: 1.2em; /* Base font size for the first line */
+    color: #ffffff; /* White color for footer message */
+    width: 100%; /* Ensures the footer message takes the full width */
+}
+
+.job-titles {
+    display: block; /* Ensure it takes the full line */
+    font-size: 1.5em; /* Increase font size for job titles (larger than the first line) */
+    color: rgb(239, 239, 239); /* Light gray color for job titles */
+    margin-top: 10px; /* Add space above the job titles */
+    margin-bottom: 10px; /* Add space below the job titles */
+    font-weight: bold;
+}
