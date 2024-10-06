@@ -92,7 +92,7 @@ button:disabled {
 
 #footer-message {
     position: fixed;
-    bottom: 80px; /* Position it 80px from the bottom */
+    bottom: 0px; /* Position it 80px from the bottom */
     left: 50%; /* Move it to the center of the screen */
     transform: translateX(-50%); /* Adjust position to truly center */
     text-align: center; /* Center text within the container */
@@ -109,3 +109,4 @@ button:disabled {
     margin-bottom: 10px; /* Add space below the job titles */
     font-weight: bold;
 }
+
